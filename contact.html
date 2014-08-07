@@ -6,7 +6,7 @@
 <head>
 <title>contact</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
+<script type="text/javascript" src="validareformular.js"></script>
 <link rel="stylesheet" type="text/css" href="css.css" media="screen" />
 
 
@@ -53,8 +53,23 @@
 	  </p>
 	   
     </div>
+    <div>
+    	<form action="#" enctype="multipart/form-data" name="form" onsubmit="return ValidareForm(this);">
+<label>Name <br />
+	 <input type="text" name="nume" />
+</label><br />
+<label>E-mail <br />
+	<input type="text" name="email" />
+</label><br />
+<label>Mesaj <br />
+	<textarea name="mesaj" cols="100"></textarea>
+<label><br /><br />
+	<input type="submit" name="submit" />
+</form>
 
-    
+    </div>
+
+	    
 
     <div style="clear: both;"></div>
 
